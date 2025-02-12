@@ -1,4 +1,4 @@
-const menuIcon= document.querySelector(".menu-icon")
+const menuIcon = document.querySelector(".menu-icon")
 const navList = document.querySelector("ul");
 
 menuIcon.addEventListener('click', () => {
@@ -8,10 +8,10 @@ menuIcon.addEventListener('click', () => {
         document.querySelector(".nav-links").classList.toggle("active");
     }
 })
-// Inisialisasi EmailJS
-(function () {
-    emailjs.init("L9BAqPWSHhojCZrPl"); // Ganti dengan User ID dari EmailJS
-})();
+
+    (function () {
+        emailjs.init("L9BAqPWSHhojCZrPl"); // Ganti dengan User ID dari EmailJS
+    })();
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Mencegah reload halaman
@@ -25,5 +25,18 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
             alert("Failed to send message. Please try again.");
         });
 });
+
+window.addEventListener("scroll", function () {
+
+    const content = document.querySelector(".content");
+
+
+    if (window.scrollY > 50) {
+        content.classList.add("blur-effect");
+    } else {
+        content.classList.remove("blur-effect");
+    }
+});
+
 
 

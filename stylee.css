@@ -47,13 +47,15 @@
     margin-bottom: 20px;
 }
 
+.education {
+    padding: 40px;
+}
+
 .education-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
     min-height: 10vh;
-
     width: 100%;
 }
 
@@ -108,20 +110,15 @@ body {
     border-radius: 50%;
     width: 100%;
     max-width: 250px;
-
     height: auto;
-
 }
 
 
 .hero {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
-
     text-align: left;
-
     padding: 20px;
     position: relative;
 }
@@ -130,12 +127,11 @@ body {
 .container-button {
     display: flex;
     gap: 10px;
-
-
 }
 
 .container-button a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -198,7 +194,6 @@ button {
     font-size: 18px;
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
-
 }
 
 button a {
@@ -319,11 +314,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    left: 0;
 }
 
 .nav-links {
